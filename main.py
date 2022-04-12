@@ -86,7 +86,7 @@ def rewrite(origin_text):
             res_text+='l'
         elif current_text=='μ':
             res_text+='m'
-        elif current_text=='ν' or current_uni == 0x03cd or current_uni == 0x03cb or current_uni == 0x03b0 or 0x1f50 <= current_uni <= 0x1f57 or 0x1f7a <= current_uni <= 0x1f7b or 0x1fe0 <= current_uni <= 0x1fe3 or 0x1fe6 <= current_uni <= 0x1fe7:
+        elif current_text=='ν':
             res_text+='n'
         elif current_text=='ξ':
             res_text+='x'
@@ -104,7 +104,7 @@ def rewrite(origin_text):
             res_text+='s'
         elif current_text=='τ':
             res_text+='t'
-        elif current_text=='υ':
+        elif current_text=='υ' or current_uni == 0x03cd or current_uni == 0x03cb or current_uni == 0x03b0 or 0x1f50 <= current_uni <= 0x1f57 or 0x1f7a <= current_uni <= 0x1f7b or 0x1fe0 <= current_uni <= 0x1fe3 or 0x1fe6 <= current_uni <= 0x1fe7:
             res_text+='y'
         elif current_text=='φ':
             res_text+='ph'
